@@ -13,7 +13,31 @@
       "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80",
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80"
     ],
-    "cover": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80"
+    "cover": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "why": "An island you reach only by boat, surrounded by pine forest and still water. No road access, no neighbours, no reason to leave early. It made the list because the silence is the whole point.",
+    "region": "SW Archipelago",
+    "sleeps": "2–4",
+    "internet": "None",
+    "language": "Finnish / English",
+    "pets": "No",
+    "temps": ["#B8D0E8","#B0C8E0","#BCD4E8","#B8D8C4","#A8C87A","#C8D070","#D0C860","#C8D070","#A8C87A","#B8D8C4","#B8D0E8","#B8CEE4"],
+    "amenities": [
+      {"icon": "ti-flame", "label": "Wood sauna"},
+      {"icon": "ti-droplet", "label": "Hot shower"},
+      {"icon": "ti-chef-hat", "label": "Full kitchen"},
+      {"icon": "ti-sailboat", "label": "Rowing boat"},
+      {"icon": "ti-sun", "label": "Solar power"},
+      {"icon": "ti-star", "label": "Fireplace"}
+    ],
+    "activities": ["Swimming off the rocks", "Kayaking the archipelago", "Berry picking in season", "Fishing from the jetty", "Birdwatching at dawn"],
+    "getting_there": {
+      "airport": {"name": "Turku Airport (TKU)", "distance": "80 km · 1h by car"},
+      "town": {"name": "Uusikaupunki", "distance": "15 min by car + boat"},
+      "city": {"name": "Helsinki", "distance": "2h30 by car"}
+    },
+    "coordinates": {"lat": 60.8, "lng": 21.4},
+    "listing_url": "https://www.airbnb.com",
+    "similar": ["002-desert-window-namibia", "003-casa-pietra-italy", "004-rio-frio-cabin-portugal"]
   },
   {
     "id": "002",
@@ -27,7 +51,29 @@
     "photos": [
       "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1400&q=80"
     ],
-    "cover": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80"
+    "cover": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80",
+    "why": "A concrete box built to frame the Namib through picture windows. No phone signal. Solar power only. The scale of the dunes from inside is unlike anything else.",
+    "region": "Namib Coast",
+    "sleeps": "2",
+    "internet": "None",
+    "language": "English / Afrikaans",
+    "pets": "No",
+    "temps": ["#D8A030","#D8A030","#D0A840","#C8B040","#C0B860","#B8C070","#B8C070","#C0B860","#C8B040","#D0A840","#D0A030","#D8A030"],
+    "amenities": [
+      {"icon": "ti-sun", "label": "Solar power"},
+      {"icon": "ti-droplet", "label": "Outdoor shower"},
+      {"icon": "ti-chef-hat", "label": "Basic kitchen"},
+      {"icon": "ti-star", "label": "Stargazing deck"}
+    ],
+    "activities": ["Dune walks at sunrise", "Stargazing at night", "Sandboarding nearby", "Day trip to Swakopmund", "Quad biking on the dunes"],
+    "getting_there": {
+      "airport": {"name": "Walvis Bay Airport (WVB)", "distance": "45 km · 40 min by car"},
+      "town": {"name": "Swakopmund", "distance": "20 min by car"},
+      "city": {"name": "Windhoek", "distance": "4h by car"}
+    },
+    "coordinates": {"lat": -22.7, "lng": 14.5},
+    "listing_url": "https://www.airbnb.com",
+    "similar": ["001-saaristo-retreat-finland", "003-casa-pietra-italy", "004-rio-frio-cabin-portugal"]
   },
   {
     "id": "003",
@@ -41,7 +87,31 @@
     "photos": [
       "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=1400&q=80"
     ],
-    "cover": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80"
+    "cover": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80",
+    "why": "Sardinia's east coast is still rough and under-visited. Thick stone walls, a terrace facing the sea, olive trees in every direction. The right base for this part of the island.",
+    "region": "Ogliastra, East Sardinia",
+    "sleeps": "4–6",
+    "internet": "Wifi",
+    "language": "Italian / English",
+    "pets": "No",
+    "temps": ["#B8D8C4","#B8D8C4","#A8C87A","#C0C870","#C8B040","#D8A030","#E09020","#D89828","#D8A030","#C8B040","#C0C870","#B8D8C4"],
+    "amenities": [
+      {"icon": "ti-chef-hat", "label": "Full kitchen"},
+      {"icon": "ti-sun", "label": "Outdoor terrace"},
+      {"icon": "ti-plant", "label": "Private garden"},
+      {"icon": "ti-flame", "label": "Wood oven"},
+      {"icon": "ti-wind", "label": "Air conditioning"},
+      {"icon": "ti-wifi", "label": "Wifi"}
+    ],
+    "activities": ["Swimming in sea coves", "Snorkelling off rocks", "Hiking coastal trails", "Day trip to Cala Gonone", "Nuraghi ruins nearby"],
+    "getting_there": {
+      "airport": {"name": "Cagliari Airport (CAG)", "distance": "180 km · 2h by car"},
+      "town": {"name": "Santa Maria Navarrese", "distance": "5 min walk"},
+      "city": {"name": "Cagliari", "distance": "2h by car"}
+    },
+    "coordinates": {"lat": 39.9, "lng": 9.6},
+    "listing_url": "https://www.airbnb.com",
+    "similar": ["001-saaristo-retreat-finland", "002-desert-window-namibia", "004-rio-frio-cabin-portugal"]
   },
   {
     "id": "004",
@@ -55,6 +125,28 @@
     "photos": [
       "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80"
     ],
-    "cover": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
+    "cover": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+    "why": "Stone cabin, cold river, 20 minutes on foot through oak forest with no road in. Portugal's national park keeps this part of the country genuinely empty. That is the reason it is here.",
+    "region": "Minho, Northern Portugal",
+    "sleeps": "2–3",
+    "internet": "None",
+    "language": "Portuguese / English",
+    "pets": "No",
+    "temps": ["#B8D8C4","#A8C87A","#A8C87A","#A8C87A","#C0C870","#C8B040","#D8A030","#D8A030","#C8B040","#C0C870","#A8C87A","#B8D8C4"],
+    "amenities": [
+      {"icon": "ti-flame", "label": "Wood stove"},
+      {"icon": "ti-chef-hat", "label": "Basic kitchen"},
+      {"icon": "ti-flame", "label": "Outdoor fire pit"},
+      {"icon": "ti-droplet", "label": "River swimming"}
+    ],
+    "activities": ["River swimming", "Hiking in the national park", "Waterfall walks", "Wildlife spotting", "Fishing in the river"],
+    "getting_there": {
+      "airport": {"name": "Porto Airport (OPO)", "distance": "90 km · 1h20 by car"},
+      "town": {"name": "Gerês village", "distance": "20 min on foot"},
+      "city": {"name": "Braga", "distance": "55 km · 50 min by car"}
+    },
+    "coordinates": {"lat": 41.7, "lng": -8.1},
+    "listing_url": "https://www.airbnb.com",
+    "similar": ["001-saaristo-retreat-finland", "002-desert-window-namibia", "003-casa-pietra-italy"]
   }
 ]

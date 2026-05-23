@@ -444,3 +444,588 @@ a {
     aspect-ratio: 16 / 9;
   }
 }
+
+
+/* ============================================================
+   PLACE PAGE — all rules below are new, none modify existing
+   ============================================================ */
+
+/* Place page container */
+.place-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Back bar */
+.back-bar {
+  padding: 8px 0;
+  border-bottom: 0.5px solid var(--border);
+  background: var(--bg);
+}
+
+.back-link {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #888;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+/* Place header */
+.place-header {
+  padding: 16px 0 0;
+}
+
+.place-name {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+.place-location {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.place-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.place-tags .tag {
+  font-size: 9px;
+  padding: 2px 7px;
+  color: #555;
+  border: 0.5px solid #C8C4BE;
+  background: transparent;
+  border-radius: 2px;
+}
+
+/* Two-column body */
+.place-body {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  align-items: flex-start;
+}
+
+.left-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.right-col {
+  flex: 0 0 160px;
+  position: sticky;
+  top: 24px;
+}
+
+/* Section label with bottom border */
+.place-section {
+  margin-bottom: 20px;
+}
+
+.place-section-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #888;
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+/* Why box */
+.why-box {
+  background: var(--green-bg);
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.why-box p {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 300;
+  font-style: italic;
+  color: #27500A;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Getting there — side by side */
+.getting-there-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.getting-there-distances {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Map */
+.place-map {
+  flex: 1;
+  height: 130px;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  min-width: 0;
+}
+
+/* Distance rows */
+.distance-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.distance-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+.distance-icon {
+  color: var(--green-stay);
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.distance-name {
+  flex: 1;
+}
+
+.distance-time {
+  color: #888;
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+
+/* Amenities */
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+.amenity-item .ti {
+  font-size: 15px;
+  color: var(--green-stay);
+  flex-shrink: 0;
+}
+
+/* Activities */
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 7px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: #555;
+}
+
+.activity-dash {
+  color: #C8C4BE;
+  flex-shrink: 0;
+}
+
+/* Sidebar card */
+.sidebar-card {
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  background: var(--bg);
+}
+
+.sidebar-title {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #888;
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.info-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #888;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.info-value {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+/* Temperature bar */
+.temp-section {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.temp-bar {
+  display: flex;
+  gap: 1px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.temp-cell {
+  flex: 1;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.temp-months {
+  display: flex;
+}
+
+.temp-months span {
+  font-family: var(--font-body);
+  font-size: 7.5px;
+  color: #888;
+  flex: 1;
+  text-align: center;
+}
+
+/* CTA button */
+.cta-btn {
+  display: block;
+  background: var(--green-exact);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: background 0.15s;
+}
+
+.cta-btn:hover {
+  background: var(--green-elsewhere);
+}
+
+/* Similar places */
+.similar-section {
+  border-top: 0.5px solid var(--border);
+  padding: 14px 0 40px;
+}
+
+.similar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.similar-card {
+  display: block;
+}
+
+.similar-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-secondary);
+}
+
+.similar-name {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  margin-top: 8px;
+  margin-bottom: 3px;
+  transition: color 0.2s;
+}
+
+.similar-location {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.similar-card:hover .similar-name {
+  color: var(--green-exact);
+}
+
+/* Place page — mobile */
+@media (max-width: 768px) {
+  .place-container {
+    padding: 0 20px;
+  }
+
+  .place-body {
+    flex-direction: column;
+  }
+
+  .right-col {
+    position: static;
+    width: 100%;
+    flex: none;
+  }
+
+  .getting-there-layout {
+    flex-direction: column;
+  }
+
+  .getting-there-distances {
+    flex: none;
+    width: 100%;
+  }
+
+  .place-map {
+    width: 100%;
+    height: 160px;
+  }
+
+  .similar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+
+.about-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #888;
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 5px;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  max-width: 600px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.75;
+}
+
+.about-text p + p {
+  margin-top: 1em;
+}
+
+.about-divider {
+  border: none;
+  border-top: 0.5px solid #E8E4DE;
+  margin: 40px 0;
+}
+
+.contact-text {
+  max-width: 600px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+  line-height: 2;
+}
+
+.contact-text p + p {
+  margin-top: 0;
+}
+
+.contact-link {
+  color: #4B712B;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   BROWSE PAGE
+   ============================================================ */
+
+.browse-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.browse-header {
+  margin-bottom: 24px;
+}
+
+.browse-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.browse-count {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 300;
+  color: #888;
+}
+
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .browse-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   BROWSE PAGE — feedback fixes
+   ============================================================ */
+
+/* Point 1 — tighten card image/text gap */
+.card-info {
+  padding-top: 8px;
+}
+
+/* Point 2 — page heading */
+.browse-page {
+  padding-top: 0;
+}
+
+.browse-heading {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+/* Point 3 — card photo arrows */
+.card-arrows {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: none;
+  gap: 4px;
+  z-index: 2;
+}
+
+.place-card:hover .card-arrows {
+  display: flex;
+}
+
+.card-arrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+.card-arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Browse cards — 4:5 portrait ratio (scoped, does not affect index.html) */
+.browse-grid .card-image {
+  aspect-ratio: 4 / 5;
+  height: auto;
+}
+
+/* Tighten name/location gap on cards */
+.card-name {
+  margin-bottom: -3px;
+}
+
+/* Ensure browse card names render in dark text — explicit override */
+.browse-grid .card-name {
+  color: #1A1A1A;
+}
