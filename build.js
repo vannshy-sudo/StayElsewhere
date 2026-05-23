@@ -85,7 +85,6 @@ const html = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
-    <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
   </header>
 
   <section class="carousel-section">
@@ -177,12 +176,11 @@ const placeHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
-    <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
   </header>
 
   <div class="back-bar">
     <div class="place-container">
-      <a href="index.html" class="back-link">&#8592; All places</a>
+      <a href="browse.html" class="back-link">&#8592; All places</a>
     </div>
   </div>
 
@@ -242,7 +240,6 @@ const aboutHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
-    <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
   </header>
 
   <div class="place-container about-page">
@@ -260,7 +257,7 @@ const aboutHtml = `<!DOCTYPE html>
 
     <div class="contact-text">
       <p>Questions, suggestions, or just found a place that should be here:<br>
-      <a href="mailto:stayelsewhere@gmail.com" class="contact-link">stayelsewhere@gmail.com</a></p>
+      <a href="mailto:stayelsewhere.blog@gmail.com" class="contact-link">stayelsewhere.blog@gmail.com</a></p>
       <p>Instagram: <a href="https://instagram.com/stayelsewhere.blog" class="contact-link" target="_blank" rel="noopener">@stayelsewhere.blog</a></p>
     </div>
 
@@ -305,7 +302,6 @@ const browseHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
-    <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
   </header>
 
   <div class="place-container browse-page">
