@@ -15,12 +15,16 @@
     var prevBtn = card.querySelector('.card-arrow-prev');
     var nextBtn = card.querySelector('.card-arrow-next');
 
+    function goTo(index) {
+      current = (index + photos.length) % photos.length;
+      imageEl.style.backgroundImage = "url('" + photos[current] + "')";
+    }
+
     if (prevBtn) {
       prevBtn.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
-        current = (current - 1 + photos.length) % photos.length;
-        imageEl.style.backgroundImage = "url('" + photos[current] + "')";
+        goTo(current - 1);
       });
     }
 
@@ -28,10 +32,26 @@
       nextBtn.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
-        current = (current + 1) % photos.length;
-        imageEl.style.backgroundImage = "url('" + photos[current] + "')";
+        goTo(current + 1);
       });
     }
+
+    // Touch swipe
+    var touchStartX = 0;
+    imageEl.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    imageEl.addEventListener('touchend', function (e) {
+      var diff = e.changedTouches[0].clientX - touchStartX;
+      if (diff > 40) {
+        e.preventDefault();
+        goTo(current - 1);
+      } else if (diff < -40) {
+        e.preventDefault();
+        goTo(current + 1);
+      }
+    });
+
   });
 
 })();

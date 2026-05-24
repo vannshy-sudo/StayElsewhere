@@ -13,11 +13,8 @@
 
   function updateDots() {
     for (var i = 0; i < dots.length; i++) {
-      if (i === current) {
-        dots[i].classList.add('carousel-dot--active');
-      } else {
-        dots[i].classList.remove('carousel-dot--active');
-      }
+      if (i === current) dots[i].classList.add('carousel-dot--active');
+      else dots[i].classList.remove('carousel-dot--active');
     }
   }
 
@@ -43,6 +40,25 @@
   if (photos.length <= 1) {
     btnPrev.style.display = 'none';
     btnNext.style.display = 'none';
+  }
+
+  // Touch swipe
+  var touchStartX = 0;
+  var carouselEl = document.querySelector('.carousel');
+  if (carouselEl) {
+    carouselEl.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    carouselEl.addEventListener('touchend', function (e) {
+      var diff = e.changedTouches[0].clientX - touchStartX;
+      if (diff > 40) {
+        current = (current - 1 + photos.length) % photos.length;
+        update();
+      } else if (diff < -40) {
+        current = (current + 1) % photos.length;
+        update();
+      }
+    });
   }
 
   update();

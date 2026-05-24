@@ -27,6 +27,30 @@
     var btnPrev = document.getElementById('btn-prev');
     var btnNext = document.getElementById('btn-next');
     var current = 0;
+    var dotEls  = [];
+
+    // Inject dots on mobile if multiple photos
+    if (photos.length > 1) {
+      var carouselEl = document.querySelector('.carousel');
+      if (carouselEl) {
+        var dotsContainer = document.createElement('div');
+        dotsContainer.className = 'carousel-dots';
+        for (var d = 0; d < photos.length; d++) {
+          var dot = document.createElement('span');
+          dot.className = 'carousel-dot' + (d === 0 ? ' carousel-dot--active' : '');
+          dotsContainer.appendChild(dot);
+          dotEls.push(dot);
+        }
+        carouselEl.appendChild(dotsContainer);
+      }
+    }
+
+    function updateDots() {
+      for (var i = 0; i < dotEls.length; i++) {
+        if (i === current) dotEls[i].classList.add('carousel-dot--active');
+        else dotEls[i].classList.remove('carousel-dot--active');
+      }
+    }
 
     function update() {
       var p = (current - 1 + photos.length) % photos.length;
@@ -34,6 +58,7 @@
       left.style.backgroundImage   = "url('" + photos[p]       + "')";
       center.style.backgroundImage = "url('" + photos[current] + "')";
       right.style.backgroundImage  = "url('" + photos[n]       + "')";
+      updateDots();
     }
 
     btnPrev.addEventListener('click', function () {
@@ -48,6 +73,25 @@
     if (photos.length <= 1) {
       btnPrev.style.display = 'none';
       btnNext.style.display = 'none';
+    }
+
+    // Touch swipe
+    var touchStartX = 0;
+    var carouselSwipe = document.querySelector('.carousel');
+    if (carouselSwipe) {
+      carouselSwipe.addEventListener('touchstart', function (e) {
+        touchStartX = e.changedTouches[0].clientX;
+      }, { passive: true });
+      carouselSwipe.addEventListener('touchend', function (e) {
+        var diff = e.changedTouches[0].clientX - touchStartX;
+        if (diff > 40) {
+          current = (current - 1 + photos.length) % photos.length;
+          update();
+        } else if (diff < -40) {
+          current = (current + 1) % photos.length;
+          update();
+        }
+      });
     }
 
     if (photos.length > 0) update();
