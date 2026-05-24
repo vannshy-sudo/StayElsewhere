@@ -1163,3 +1163,45 @@ a {
   }
 
 }
+
+
+/* Mobile header — centered stacked layout (overrides previous 768px header rules) */
+@media (max-width: 768px) {
+
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .logo-block {
+    text-align: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-tagline {
+    display: block;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 0;
+  }
+
+  .site-nav a {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #1A1A1A;
+  }
+
+}
