@@ -85,6 +85,11 @@ const html = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
+    <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+    <div class="mobile-nav-dropdown" id="mobile-nav">
+      <a href="browse.html">BROWSE</a>
+      <a href="about.html">ABOUT</a>
+    </div>
   </header>
 
   <section class="carousel-section">
@@ -177,6 +182,11 @@ const placeHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
+    <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+    <div class="mobile-nav-dropdown" id="mobile-nav">
+      <a href="browse.html">BROWSE</a>
+      <a href="about.html">ABOUT</a>
+    </div>
   </header>
 
   <div class="back-bar">
@@ -205,6 +215,7 @@ const placeHtml = `<!DOCTYPE html>
     window.PLACES_DATA = ${JSON.stringify(places)};
   </script>
   <script src="js/place.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>`;
@@ -241,6 +252,11 @@ const aboutHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
+    <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+    <div class="mobile-nav-dropdown" id="mobile-nav">
+      <a href="browse.html">BROWSE</a>
+      <a href="about.html">ABOUT</a>
+    </div>
   </header>
 
   <div class="place-container about-page">
@@ -268,6 +284,8 @@ const aboutHtml = `<!DOCTYPE html>
     <p class="footer-logo"><span class="logo-stay">STAY</span> <span class="logo-elsewhere">ELSEWHERE</span></p>
     <p class="footer-tagline">A collection of calm, slow places to live differently.</p>
   </footer>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>`;
@@ -303,6 +321,11 @@ const browseHtml = `<!DOCTYPE html>
       <a href="browse.html">BROWSE</a>
       <a href="about.html">ABOUT</a>
     </nav>
+    <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+    <div class="mobile-nav-dropdown" id="mobile-nav">
+      <a href="browse.html">BROWSE</a>
+      <a href="about.html">ABOUT</a>
+    </div>
   </header>
 
   <div class="place-container browse-page">
@@ -321,6 +344,7 @@ const browseHtml = `<!DOCTYPE html>
   </footer>
 
   <script src="js/browse.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>`;

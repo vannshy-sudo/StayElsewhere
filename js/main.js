@@ -47,3 +47,26 @@
 
   update();
 })();
+
+// Hamburger menu toggle — runs on all pages
+(function () {
+  var btn      = document.querySelector('.hamburger-btn');
+  var dropdown = document.getElementById('mobile-nav');
+  if (!btn || !dropdown) return;
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdown.classList.toggle('is-open');
+  });
+
+  var links = dropdown.querySelectorAll('a');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+      dropdown.classList.remove('is-open');
+    });
+  }
+
+  document.addEventListener('click', function () {
+    dropdown.classList.remove('is-open');
+  });
+})();

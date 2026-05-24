@@ -1205,3 +1205,82 @@ a {
   }
 
 }
+
+
+/* ============================================================
+   HAMBURGER MENU — global + mobile
+   ============================================================ */
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: var(--page-pad);
+  transform: translateY(-50%);
+  padding: 0;
+  line-height: 1;
+  z-index: 101;
+}
+
+.mobile-nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #FAFAF8;
+  border-bottom: 0.5px solid #E8E4DE;
+  z-index: 100;
+}
+
+.mobile-nav-dropdown.is-open {
+  display: block;
+}
+
+.mobile-nav-dropdown a {
+  display: block;
+  font-size: 14px;
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #1A1A1A;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.mobile-nav-dropdown a:hover {
+  background: var(--bg-secondary);
+}
+
+@media (max-width: 768px) {
+
+  .site-header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .logo-tagline {
+    display: block;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+}
