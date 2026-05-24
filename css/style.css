@@ -1029,3 +1029,64 @@ a {
 .browse-grid .card-name {
   color: #1A1A1A;
 }
+
+
+/* ============================================================
+   MOBILE — homepage layout (max-width 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* Point 1 — header: stack logo + tagline + nav links */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .logo-tagline {
+    display: block;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .site-nav a {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #1A1A1A;
+  }
+
+  /* Point 2 — MORE PLACES horizontal cards, 96px thumbnail, no tags */
+  .places-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .places-grid .place-card {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .places-grid .card-image {
+    flex: 0 0 96px;
+    width: 96px;
+    height: 72px;
+    aspect-ratio: unset;
+  }
+
+  .places-grid .card-info {
+    flex: 1;
+    padding-top: 0;
+  }
+
+  .places-grid .card-tags {
+    display: none;
+  }
+
+}
