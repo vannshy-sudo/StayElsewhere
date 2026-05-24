@@ -98,6 +98,7 @@ const html = `<!DOCTYPE html>
         <button class="carousel-btn" id="btn-next">&#8250;</button>
       </div>
       <a href="place.html?id=${featured.slug}" class="carousel-panel panel-right" id="panel-right"></a>
+      ${featured.photos.length > 1 ? `<div class="carousel-dots">${featured.photos.map((_, i) => `<span class="carousel-dot${i === 0 ? ' carousel-dot--active' : ''}"></span>`).join('')}</div>` : ''}
     </div>
   </section>
 

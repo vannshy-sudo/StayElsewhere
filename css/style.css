@@ -1090,3 +1090,76 @@ a {
   }
 
 }
+
+
+/* ============================================================
+   CAROUSEL DOTS — global styles (hidden on desktop)
+   ============================================================ */
+
+.carousel {
+  position: relative;
+}
+
+.carousel-dots {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 5px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  display: block;
+}
+
+.carousel-dot--active {
+  background: rgba(255, 255, 255, 1);
+}
+
+
+/* ============================================================
+   MOBILE — header + carousel overrides (max-width 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* Point 1 — compact single-row header */
+  .site-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+
+  /* Point 2 — carousel: no gaps, no arrows, dots, smaller height */
+  .carousel {
+    height: 40vh;
+    min-height: 280px;
+  }
+
+  .carousel-gap {
+    flex: 0 0 0px;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .carousel-gap .carousel-btn {
+    display: none;
+  }
+
+  .carousel-dots {
+    display: flex;
+  }
+
+}

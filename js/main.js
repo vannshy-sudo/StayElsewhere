@@ -7,8 +7,19 @@
   var panelRight  = document.getElementById('panel-right');
   var btnPrev     = document.getElementById('btn-prev');
   var btnNext     = document.getElementById('btn-next');
+  var dots        = document.querySelectorAll('.carousel-dot');
 
   var current = 0;
+
+  function updateDots() {
+    for (var i = 0; i < dots.length; i++) {
+      if (i === current) {
+        dots[i].classList.add('carousel-dot--active');
+      } else {
+        dots[i].classList.remove('carousel-dot--active');
+      }
+    }
+  }
 
   function update() {
     var prev = (current - 1 + photos.length) % photos.length;
@@ -16,6 +27,7 @@
     panelLeft.style.backgroundImage   = "url('" + photos[prev]    + "')";
     panelCenter.style.backgroundImage = "url('" + photos[current] + "')";
     panelRight.style.backgroundImage  = "url('" + photos[next]    + "')";
+    updateDots();
   }
 
   btnPrev.addEventListener('click', function () {
@@ -28,7 +40,6 @@
     update();
   });
 
-  // Hide controls if only one photo
   if (photos.length <= 1) {
     btnPrev.style.display = 'none';
     btnNext.style.display = 'none';
