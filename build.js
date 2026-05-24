@@ -110,7 +110,7 @@ const html = `<!DOCTYPE html>
   <div class="page-body">
 
     <section class="featured-section">
-      <p class="section-label">LATEST PLACES</p>
+      <p class="section-label">LATEST PLACE</p>
       <div class="featured-content">
         <div class="featured-left">
           <a href="place.html?id=${featured.slug}" class="featured-name">${featured.name.toUpperCase()}</a>

@@ -1339,3 +1339,19 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Landscape mobile: keep gap columns but hide arrows */
+@media (max-width: 768px) and (orientation: landscape) {
+  .carousel-gap .carousel-btn {
+    display: none;
+  }
+}
+
+/* Portrait mobile: aspect-ratio instead of fixed height */
+@media (max-width: 768px) and (orientation: portrait) {
+  .carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
