@@ -2,7 +2,7 @@
   {
   "id": "001",
   "slug": "001-island-Finland",
-  "name": "Privaatti saari / Private island",
+  "name": "Private island",
   "location": "Uusikaupunki, Finland",
   "country": "Finland",
   "type": "Island",
@@ -10,13 +10,14 @@
     "Private Island",
     "Archipelago",
     "Off-Grid",
-    "Sauna",
-    "Baltic Sea"
+    "Baltic Sea",
+    "Wood Sauna"
   ],
-  "description": "3 cabins sleep up to 10 guests across 3 bedrooms with 4 beds and 1 bath. Solar-powered main cabin has a compact kitchen with hand-washing; wood-heated sauna with 120 kg Harvia Legend kiuas, rowboat, 2 piers, BBQ, and sandy beach access. No running water (rainwater and sea water used for washing); Wifi available in the main cabin.",
+  "description": "3 small cabins sleep up to 10 guests across 3 bedrooms with 4 beds and 1 bath. Solar-powered main cabin has a compact kitchen with hand-washing; wood-fired sauna with 120 kg Harvia Legend stove; no running water, rain and sea water used for washing. Wifi available in cabins.",
   "photos": [
     "photos/001-island-Finland/photos/001.png",
     "photos/001-island-Finland/photos/002.png",
+    "photos/001-island-Finland/photos/0021.png",
     "photos/001-island-Finland/photos/003.png",
     "photos/001-island-Finland/photos/004.png",
     "photos/001-island-Finland/photos/005.png",
@@ -26,7 +27,7 @@
     "photos/001-island-Finland/photos/009.png"
   ],
   "cover": "photos/001-island-Finland/photos/cover.png",
-  "why": "DRAFT — Three cabins on a private island in the Finnish archipelago, reached by boat with no road access and no neighbours. No running water — rainwater and seawater only, solar power for what little electricity there is. The Baltic archipelago around Uusikaupunki is the reason this works: enough uninhabited islands nearby to row to, enough open water to make the isolation feel earned.",
+  "why": "DRAFT — A private island in the Finnish archipelago, reached by boat, with no running water and three small cabins spread across the rock. The wood-fired sauna runs on a 120kg cast iron stove; rain and seawater handle the rest. That self-sufficiency, and the distance from the mainland, is why it is here.",
   "region": "SW Archipelago",
   "sleeps": "10",
   "internet": "Wifi",
@@ -53,7 +54,11 @@
     },
     {
       "icon": "ti-swimming",
-      "label": "Sandy beach swimming"
+      "label": "Private sandy beach"
+    },
+    {
+      "icon": "ti-sailboat",
+      "label": "Rowing boat"
     },
     {
       "icon": "ti-sun",
@@ -64,48 +69,43 @@
       "label": "Compact kitchen"
     },
     {
-      "icon": "ti-sailboat",
-      "label": "Rowboat included"
+      "icon": "ti-wifi",
+      "label": "Wifi"
     },
     {
       "icon": "ti-star",
-      "label": "Private island 2.2 ha"
+      "label": "Sea view"
     },
     {
-      "icon": "ti-wind",
-      "label": "Wood-heated cabins"
-    },
-    {
-      "icon": "ti-wifi",
-      "label": "Wifi"
+      "icon": "ti-plant",
+      "label": "2.2 ha private island"
     }
   ],
   "activities": [
-    "Swimming off sandy beach",
+    "Swimming from private beach",
     "Rowing around the island",
-    "Island hopping by rowboat",
-    "Picnics on uninhabited nearby islands",
-    "Wildlife spotting (eagles, herons, swans)",
-    "Sauna and sea bathing",
+    "Island picnics on uninhabited neighbours",
+    "Wildlife watching (eagles, herons, swans)",
+    "Sauna bathing",
     "Outdoor games"
   ],
   "getting_there": {
     "airport": {
       "name": "Turku Airport (TKU)",
-      "distance": "90 km · 1h 15min by car + boat"
+      "distance": "95 km · 1h 20min by car + boat"
     },
     "town": {
       "name": "Uusikaupunki",
-      "distance": "20–30 min by boat"
+      "distance": "~30 min by boat"
     },
     "city": {
       "name": "Turku",
-      "distance": "1h 30min by car + boat"
+      "distance": "~1h 30min by car + boat"
     }
   },
   "coordinates": {
-    "lat": 60.8,
-    "lng": 21.4
+    "lat": 60.8018,
+    "lng": 21.4082
   },
   "listing_url": "https://www.airbnb.com/rooms/48821490"
   },
