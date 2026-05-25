@@ -244,14 +244,14 @@
   }
 
   // -------------------------------------------------------------------------
-  // Similar places
+  // Other places — last 3 from allPlaces excluding current
   // -------------------------------------------------------------------------
   function renderSimilar(place, allPlaces) {
-    if (!place.similar || place.similar.length === 0) return '';
+    var others = allPlaces.filter(function (p) { return p.slug !== place.slug; });
+    var show   = others.slice(-3);
+    if (show.length === 0) return '';
 
-    var cards = place.similar.map(function (s) {
-      var p = allPlaces.find(function (x) { return x.slug === s; });
-      if (!p) return '';
+    var cards = show.map(function (p) {
       return '<a href="place.html?id=' + p.slug + '" class="similar-card">' +
         '<div class="similar-image" style="background-image:url(\'' + p.cover + '\')"></div>' +
         '<p class="similar-name">' + p.name.toUpperCase() + '</p>' +
@@ -261,7 +261,7 @@
 
     return '<section class="similar-section">' +
       '<div class="place-container">' +
-        sectionLabel('SIMILAR PLACES') +
+        sectionLabel('OTHER PLACES') +
         '<div class="similar-grid">' + cards + '</div>' +
       '</div>' +
     '</section>';
