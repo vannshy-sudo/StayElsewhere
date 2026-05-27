@@ -212,7 +212,7 @@
       {label: 'TYPE',     value: place.type},
       {label: 'COUNTRY',  value: place.country},
       {label: 'REGION',   value: place.region},
-      {label: 'SLEEPS',   value: place.sleeps},
+      {label: 'GUESTS',   value: place.sleeps},
       {label: 'INTERNET', value: place.internet},
       {label: 'LANGUAGE', value: place.language},
       {label: 'PETS',     value: place.pets}
