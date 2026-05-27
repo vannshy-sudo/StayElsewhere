@@ -146,7 +146,7 @@
 
   function renderWhy(place) {
     return '<div class="place-section">' +
-      sectionLabel('WHY I CHOSE THIS PLACE') +
+      sectionLabel('WHY THIS PLACE') +
       '<div class="why-box"><p>' + place.why + '</p></div>' +
     '</div>';
   }
