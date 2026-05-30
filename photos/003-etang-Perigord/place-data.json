@@ -1,0 +1,107 @@
+{
+  "id": "003",
+  "slug": "003-etang-Perigord",
+  "name": "Maison du Pont de l'Etang",
+  "location": "Saint-Laurent-des-Hommes, France",
+  "country": "France",
+  "type": "Cottage",
+  "tags": [
+    "Private Island",
+    "Lake View",
+    "Jacuzzi",
+    "Finnish Sauna",
+    "Périgord"
+  ],
+  "description": "1 bedroom with 1 queen bed accommodating 2 guests, with 1 private bathroom. Located on a private island with a terrace on stilts, lake access, private hot tub, and Finnish sauna. Free parking, EV charger, 15-inch HDTV with streaming services, and Wifi included.",
+  "photos": [
+    "photos/003-etang-Perigord/photos/001.png",
+    "photos/003-etang-Perigord/photos/002.png",
+    "photos/003-etang-Perigord/photos/003.png",
+    "photos/003-etang-Perigord/photos/004.png",
+    "photos/003-etang-Perigord/photos/005.png",
+    "photos/003-etang-Perigord/photos/006.png",
+    "photos/003-etang-Perigord/photos/0061.png",
+    "photos/003-etang-Perigord/photos/007.png",
+    "photos/003-etang-Perigord/photos/008.png",
+    "photos/003-etang-Perigord/photos/009.png",
+    "photos/003-etang-Perigord/photos/010.png"
+  ],
+  "cover": "photos/003-etang-Perigord/photos/cover.png",
+  "why": "Reached by its own bridge, this single-bedroom cottage sits on a private island in Saint-Laurent-des-Hommes. Terrace on stilts over the water, jacuzzi, Finnish sauna, and direct lake access — for two people, with nothing adjacent. The Dordogne's vineyard country begins just beyond the water.",
+  "region": "Dordogne, Aquitaine",
+  "sleeps": "2",
+  "internet": "Wifi",
+  "language": "French / English",
+  "pets": "No",
+  "temps": [
+    "#B8D8C4",
+    "#B8D8C4",
+    "#A8C87A",
+    "#A8C87A",
+    "#C8D070",
+    "#D8A030",
+    "#D8A030",
+    "#D8A030",
+    "#C8D070",
+    "#C8D070",
+    "#A8C87A",
+    "#B8D8C4"
+  ],
+  "amenities": [
+    {
+      "icon": "ti-flame",
+      "label": "Finnish sauna"
+    },
+    {
+      "icon": "ti-droplet",
+      "label": "Private hot tub (jacuzzi)"
+    },
+    {
+      "icon": "ti-swimming",
+      "label": "Lake access"
+    },
+    {
+      "icon": "ti-sun",
+      "label": "Private terrace/balcony"
+    },
+    {
+      "icon": "ti-wifi",
+      "label": "Wifi"
+    },
+    {
+      "icon": "ti-mountain",
+      "label": "Valley and park views"
+    },
+    {
+      "icon": "ti-star",
+      "label": "EV charger on premises"
+    }
+  ],
+  "activities": [
+    "Swimming in the lake",
+    "Relaxing in the jacuzzi",
+    "Exploring medieval Saint-Émilion",
+    "Visiting Monbazillac vineyard",
+    "Tennis",
+    "Nature walks along the pond"
+  ],
+  "getting_there": {
+    "airport": {
+      "name": "Bordeaux–Mérignac Airport (BOD)",
+      "distance": "110 km · 1h 15min by car"
+    },
+    "town": {
+      "name": "Mussidan",
+      "distance": "10 min by car"
+    },
+    "city": {
+      "name": "Périgueux",
+      "distance": "40 min by car"
+    }
+  },
+  "coordinates": {
+    "lat": 44.9167,
+    "lng": 0.1333
+  },
+  "listing_url": "https://www.airbnb.com/rooms/947183"
+}
