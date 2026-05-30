@@ -11,6 +11,10 @@
 
   var current = 0;
 
+  function parsePhoto(p) {
+    return typeof p === 'string' ? { src: p, pos: 'center' } : { src: p.src, pos: p.pos || 'center' };
+  }
+
   function updateDots() {
     for (var i = 0; i < dots.length; i++) {
       if (i === current) dots[i].classList.add('carousel-dot--active');
@@ -21,9 +25,15 @@
   function update() {
     var prev = (current - 1 + photos.length) % photos.length;
     var next = (current + 1) % photos.length;
-    panelLeft.style.backgroundImage   = "url('" + photos[prev]    + "')";
-    panelCenter.style.backgroundImage = "url('" + photos[current] + "')";
-    panelRight.style.backgroundImage  = "url('" + photos[next]    + "')";
+    var pData = parsePhoto(photos[prev]);
+    var cData = parsePhoto(photos[current]);
+    var nData = parsePhoto(photos[next]);
+    panelLeft.style.backgroundImage      = "url('" + pData.src + "')";
+    panelLeft.style.backgroundPosition   = pData.pos;
+    panelCenter.style.backgroundImage    = "url('" + cData.src + "')";
+    panelCenter.style.backgroundPosition = cData.pos;
+    panelRight.style.backgroundImage     = "url('" + nData.src + "')";
+    panelRight.style.backgroundPosition  = nData.pos;
     updateDots();
   }
 

@@ -15,9 +15,15 @@
     var prevBtn = card.querySelector('.card-arrow-prev');
     var nextBtn = card.querySelector('.card-arrow-next');
 
+    function parsePhoto(p) {
+      return typeof p === 'string' ? { src: p, pos: 'center' } : { src: p.src, pos: p.pos || 'center' };
+    }
+
     function goTo(index) {
       current = (index + photos.length) % photos.length;
-      imageEl.style.backgroundImage = "url('" + photos[current] + "')";
+      var p = parsePhoto(photos[current]);
+      imageEl.style.backgroundImage    = "url('" + p.src + "')";
+      imageEl.style.backgroundPosition = p.pos;
     }
 
     if (prevBtn) {

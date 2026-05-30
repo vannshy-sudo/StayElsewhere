@@ -29,6 +29,10 @@
     var current = 0;
     var dotEls  = [];
 
+    function parsePhoto(p) {
+      return typeof p === 'string' ? { src: p, pos: 'center' } : { src: p.src, pos: p.pos || 'center' };
+    }
+
     // Inject dots on mobile if multiple photos
     if (photos.length > 1) {
       var carouselEl = document.querySelector('.carousel');
@@ -53,11 +57,15 @@
     }
 
     function update() {
-      var p = (current - 1 + photos.length) % photos.length;
-      var n = (current + 1) % photos.length;
-      left.style.backgroundImage   = "url('" + photos[p]       + "')";
-      center.style.backgroundImage = "url('" + photos[current] + "')";
-      right.style.backgroundImage  = "url('" + photos[n]       + "')";
+      var p = parsePhoto(photos[(current - 1 + photos.length) % photos.length]);
+      var c = parsePhoto(photos[current]);
+      var n = parsePhoto(photos[(current + 1) % photos.length]);
+      left.style.backgroundImage      = "url('" + p.src + "')";
+      left.style.backgroundPosition   = p.pos;
+      center.style.backgroundImage    = "url('" + c.src + "')";
+      center.style.backgroundPosition = c.pos;
+      right.style.backgroundImage     = "url('" + n.src + "')";
+      right.style.backgroundPosition  = n.pos;
       updateDots();
     }
 
