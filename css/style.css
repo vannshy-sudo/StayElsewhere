@@ -1365,3 +1365,13 @@ a {
     max-height: 620px;
   }
 }
+
+/* Revert desktop carousel to height-based sizing — aspect-ratio only applies on mobile portrait */
+@media (min-width: 769px) {
+  .carousel {
+    height: 52vh;
+    min-height: 420px;
+    aspect-ratio: unset;
+    max-height: none;
+  }
+}
