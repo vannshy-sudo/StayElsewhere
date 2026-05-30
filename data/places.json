@@ -2,7 +2,7 @@
   {
   "id": "001",
   "slug": "001-island-Finland",
-  "name": "Private island",
+  "name": "Privaatti saari",
   "location": "Uusikaupunki, Finland",
   "country": "Finland",
   "type": "Island",
@@ -11,9 +11,9 @@
     "Archipelago",
     "Off-Grid",
     "Baltic Sea",
-    "Wood Sauna"
+    "Sauna"
   ],
-  "description": "3 small cabins sleep up to 10 guests across 3 bedrooms with 4 beds and 1 bath. Solar-powered main cabin has a compact kitchen with hand-washing; wood-fired sauna with 120 kg Harvia Legend stove; no running water, rain and sea water used for washing. Wifi available in cabins.",
+  "description": "3 small cabins with 3 bedrooms and 4 beds sleeping up to 10 guests, 1 bath. Solar-powered compact kitchen in main cabin with hand-washing only; no running water, heating by wood-burning stoves; rainwater and sea water used for washing. Private wood sauna, rowing boat, beach access, and BBQ included; wifi available.",
   "photos": [
     "photos/001-island-Finland/photos/001.png",
     "photos/001-island-Finland/photos/002.png",
@@ -27,7 +27,7 @@
     "photos/001-island-Finland/photos/009.png"
   ],
   "cover": "photos/001-island-Finland/photos/cover.png",
-  "why": "DRAFT — A private island in the Finnish archipelago, reached by boat, with no running water and three small cabins spread across the rock. The wood-fired sauna runs on a 120kg cast iron stove; rain and seawater handle the rest. That self-sufficiency, and the distance from the mainland, is why it is here.",
+  "why": "A private island in Uusikaupunki, Finland, part of the Archipelago Sea. Three cabins, a wood sauna, a rowing boat, a beach — and a solar-powered kitchen with no running water, which sets the register for the whole stay. Row out and you are likely to pass swans and herons; eagles are spotted here too.",
   "region": "SW Archipelago",
   "sleeps": "10",
   "internet": "Wifi",
@@ -74,38 +74,39 @@
     },
     {
       "icon": "ti-star",
-      "label": "Sea view"
+      "label": "Private island"
     },
     {
       "icon": "ti-plant",
-      "label": "2.2 ha private island"
+      "label": "2.2 ha nature island"
     }
   ],
   "activities": [
     "Swimming from private beach",
     "Rowing around the island",
-    "Island picnics on uninhabited neighbours",
-    "Wildlife watching (eagles, herons, swans)",
-    "Sauna bathing",
-    "Outdoor games"
+    "Island picnics to nearby uninhabited islands",
+    "Birdwatching (swans, eagles, herons)",
+    "BBQ and smoking",
+    "Outdoor games",
+    "Sauna bathing"
   ],
   "getting_there": {
     "airport": {
       "name": "Turku Airport (TKU)",
-      "distance": "95 km · 1h 20min by car + boat"
+      "distance": "80 km · 1h by car + boat"
     },
     "town": {
       "name": "Uusikaupunki",
-      "distance": "~30 min by boat"
+      "distance": "20–30 min by boat"
     },
     "city": {
       "name": "Turku",
-      "distance": "~1h 30min by car + boat"
+      "distance": "1h 15min by car + boat"
     }
   },
   "coordinates": {
-    "lat": 60.8018,
-    "lng": 21.4082
+    "lat": 60.8017,
+    "lng": 21.4034
   },
   "listing_url": "https://www.airbnb.com/rooms/48821490"
   },
