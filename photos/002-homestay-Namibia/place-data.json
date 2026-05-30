@@ -1,0 +1,99 @@
+{
+  "id": "002",
+  "slug": "002-homestay-Namibia",
+  "name": "The Desert Light Shack",
+  "location": "Swakopmund, Namibia",
+  "country": "Namibia",
+  "type": "Farm",
+  "tags": [
+    "Desert",
+    "Vineyard",
+    "Off-Grid",
+    "Farm Stay",
+    "Namib"
+  ],
+  "description": "1 bedroom with 1 queen bed plus living room with 1 queen bed and 1 couch sleeping 2 guests, 1 bath. Fully self-catering kitchen with french press coffee, dedicated workspace, patio, backyard, and free parking on premises. Pets allowed; no wifi mentioned.",
+  "photos": [
+    "photos/002-homestay-Namibia/photos/001.png",
+    "photos/002-homestay-Namibia/photos/002.png",
+    "photos/002-homestay-Namibia/photos/003.png",
+    "photos/002-homestay-Namibia/photos/004.png",
+    "photos/002-homestay-Namibia/photos/005.png",
+    "photos/002-homestay-Namibia/photos/006.png",
+    "photos/002-homestay-Namibia/photos/007.png",
+    "photos/002-homestay-Namibia/photos/008.png",
+    "photos/002-homestay-Namibia/photos/009.png"
+  ],
+  "cover": "photos/002-homestay-Namibia/photos/cover.png",
+  "why": "DRAFT — On the edge of the Namib outside Swakopmund, this small shack sits where desert farm meets one of the oldest arid landscapes on earth. The draw is the sky — the Namib at this latitude has almost no light pollution, and the stargazing is the reason to come. A patio and backyard face the open desert.\n\n---",
+  "region": "Namib Coast",
+  "sleeps": "2",
+  "internet": "None",
+  "language": "Afrikaans / German / English",
+  "pets": "Yes",
+  "temps": [
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070",
+    "#A8C87A",
+    "#C8D070",
+    "#C8D070",
+    "#C8D070"
+  ],
+  "amenities": [
+    {
+      "icon": "ti-chef-hat",
+      "label": "Self-catering kitchen"
+    },
+    {
+      "icon": "ti-sun",
+      "label": "Desert & vineyard views"
+    },
+    {
+      "icon": "ti-plant",
+      "label": "Olive & wine farm"
+    },
+    {
+      "icon": "ti-star",
+      "label": "Stargazing"
+    },
+    {
+      "icon": "ti-wind",
+      "label": "Patio / outdoor area"
+    },
+    {
+      "icon": "ti-mountain",
+      "label": "Namib Desert setting"
+    }
+  ],
+  "activities": [
+    "Stargazing",
+    "Exploring Swakopmund",
+    "Desert walks",
+    "Farm visits"
+  ],
+  "getting_there": {
+    "airport": {
+      "name": "Walvis Bay Airport (WVB)",
+      "distance": "50 km · 40 min by car"
+    },
+    "town": {
+      "name": "Swakopmund",
+      "distance": "5 min by car"
+    },
+    "city": {
+      "name": "Walvis Bay",
+      "distance": "45 km · 35 min by car"
+    }
+  },
+  "coordinates": {
+    "lat": -22.6784,
+    "lng": 14.5259
+  },
+  "listing_url": "https://www.airbnb.com/rooms/"
+}
